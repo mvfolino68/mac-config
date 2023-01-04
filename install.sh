@@ -72,6 +72,7 @@ brew install --cask visual-studio-code
 brew install mackup
 brew install terraform
 brew install mas
+brew install awscli
 
 
 
@@ -104,6 +105,10 @@ mas install 1451893560
 # Rakuten Cash Back
 mas install 1462114288  
 # Grammarly for Safari
+
+# Install confluent
+curl -sL --http1.1 https://cnfl.io/cli | sh -s -- latest
+export PATH=$(pwd)/bin:$PATH
 
 ########################### Mackup ###########################
 echo "Mackup begin"
