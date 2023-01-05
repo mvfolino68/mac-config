@@ -34,9 +34,6 @@ git lfs install
 echo "Cleaning up brew"
 brew cleanup
 
-echo "Installing homebrew cask"
-brew install caskroom/cask/brew-cask
-
 echo "Installing Applications"
 # Install font
 brew tap homebrew/cask-fonts
@@ -49,7 +46,6 @@ brew install --cask alfred
 brew install --cask google-drive
 brew install --cask notion
 brew install --cask rectangle
-brew install --cask
 brew install --cask zoom
 brew install docker
 brew install --cask iterm2
@@ -69,7 +65,7 @@ echo "Setting up Zsh plugins..."
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # Install oh my zsh theme and update config
-git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
 
 echo "Setting ZSH as shell..."
 chsh -s /bin/zsh
@@ -109,8 +105,8 @@ curl -sL --http1.1 https://cnfl.io/cli | sh -s -- latest
 export PATH=$(pwd)/bin:$PATH
 
 ########################### Mackup ###########################
-touch ~/.mackup.cfg
-chmod +rw ~/.mackup.cfg
+#touch ~/.mackup.cfg
+#chmod +rw ~/.mackup.cfg
 echo "Mackup begin"
 echo "[storage]
 engine = icloud" >> ~/.mackup.cfg
