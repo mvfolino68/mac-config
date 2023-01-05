@@ -52,11 +52,11 @@ chsh -s /bin/zsh
 
 echo "Installing Applications"
 # Install font
+brew tap homebrew/cask-fonts
+brew install --cask homebrew/cask-fonts/font-meslo-lg-nerd-font
 cd ~/Library/Fonts && { 
     curl -O 'https://github.com/Falkor/dotfiles/blob/master/fonts/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf'
     cd -; }
-brew tap homebrew/cask-fonts
-brew install --cask homebrew/cask-fonts/font-meslo-lg-nerd-font
 
 brew install --cask alfred
 brew install --cask google-drive
