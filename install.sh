@@ -96,7 +96,7 @@ mas install 963034692
 # Streaks
 mas install 414781829   
 # Keeper Password Manager
-mas install 409201541   
+#mas install 409201541   
 # Pages
 #mas install 462054704   
 # Microsoft Word
