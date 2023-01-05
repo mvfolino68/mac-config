@@ -88,7 +88,7 @@ mas install 442160987
 # Flycut
 mas install 1472777122  
 # PayPal Honey
-mas install 462058435   
+#mas install 462058435   
 # Microsoft Excel
 mas install 1592541616  
 # FakespotSafari
@@ -98,7 +98,7 @@ mas install 414781829
 # Keeper Password Manager
 mas install 409201541   
 # Pages
-mas install 462054704   
+#mas install 462054704   
 # Microsoft Word
 mas install 1451893560  
 # Rakuten Cash Back
