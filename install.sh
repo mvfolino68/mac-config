@@ -37,19 +37,6 @@ brew cleanup
 echo "Installing homebrew cask"
 brew install caskroom/cask/brew-cask
 
-# Install Zsh & Oh My Zsh
-echo "Installing Oh My ZSH..."
-curl -L http://install.ohmyz.sh | sh
-
-echo "Setting up Zsh plugins..."
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-# Install oh my zsh theme and update config
-git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-
-echo "Setting ZSH as shell..."
-chsh -s /bin/zsh
-
 echo "Installing Applications"
 # Install font
 brew tap homebrew/cask-fonts
@@ -63,7 +50,7 @@ brew install --cask google-drive
 brew install --cask notion
 brew install --cask rectangle
 brew install --cask
-brew install --cask zoomus
+brew install --cask zoom
 brew install docker
 brew install --cask iterm2
 brew install --cask google-chrome
@@ -74,6 +61,18 @@ brew install terraform
 brew install mas
 brew install awscli
 
+# Install Zsh & Oh My Zsh
+echo "Installing Oh My ZSH..."
+curl -L http://install.ohmyz.sh | sh
+
+echo "Setting up Zsh plugins..."
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+# Install oh my zsh theme and update config
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+
+echo "Setting ZSH as shell..."
+chsh -s /bin/zsh
 
 
 brew cask cleanup
