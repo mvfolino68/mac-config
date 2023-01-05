@@ -74,8 +74,6 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 echo "Setting ZSH as shell..."
 chsh -s /bin/zsh
 
-
-brew cask cleanup
 brew cleanup
 
 mas install 1440147259  
@@ -106,6 +104,7 @@ mas install 1462114288
 # Grammarly for Safari
 
 # Install confluent
+cd ~
 curl -sL --http1.1 https://cnfl.io/cli | sh -s -- latest
 export PATH=$(pwd)/bin:$PATH
 
