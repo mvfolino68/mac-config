@@ -110,6 +110,8 @@ curl -sL --http1.1 https://cnfl.io/cli | sh -s -- latest
 export PATH=$(pwd)/bin:$PATH
 
 ########################### Mackup ###########################
+touch ~/.mackup.cfg
+chmod +rw ~/.mackup.cfg
 echo "Mackup begin"
 echo "[storage]
 engine = icloud" >> ~/.mackup.cfg
