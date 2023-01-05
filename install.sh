@@ -61,11 +61,13 @@ brew install awscli
 echo "Installing Oh My ZSH..."
 curl -L http://install.ohmyz.sh | sh
 
+sudo chmod 777 ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins
 echo "Setting up Zsh plugins..."
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # Install oh my zsh theme and update config
-git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
+sudo chmod 777 ${ZSH_CUSTOM:-~/.oh-my-zsh}/themes
+git clone https://github.com/romkatv/powerlevel10k ${ZSH_CUSTOM:-~/.oh-my-zsh}/themes/powerlevel10k
 
 echo "Setting ZSH as shell..."
 chsh -s /bin/zsh
