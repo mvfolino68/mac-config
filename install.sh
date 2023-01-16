@@ -56,6 +56,8 @@ brew install mackup
 brew install terraform
 brew install mas
 brew install awscli
+brew install node
+bew install yarn
 
 # Install Zsh & Oh My Zsh
 echo "Installing Oh My ZSH..."
