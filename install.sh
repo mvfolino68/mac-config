@@ -58,6 +58,7 @@ brew install mas
 brew install awscli
 brew install node
 bew install yarn
+brew install --cask monitorcontrol
 
 # Install Zsh & Oh My Zsh
 echo "Installing Oh My ZSH..."
